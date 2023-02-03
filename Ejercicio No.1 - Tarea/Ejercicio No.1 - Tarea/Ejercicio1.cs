@@ -16,5 +16,10 @@ namespace Ejercicio_No._1___Tarea
         {
             InitializeComponent();
         }
+
+        private void EjecutarButton_Click(object sender, EventArgs e)
+        {
+            decimal Numero = Convert.ToDecimal(NumeroTextBox.Text);
+        }
     }
 }
