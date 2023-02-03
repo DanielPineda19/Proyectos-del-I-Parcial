@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.NumeroTextBox = new System.Windows.Forms.TextBox();
@@ -36,17 +37,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.ParImparTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.ErrorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(135, 9);
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(89, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(349, 40);
+            this.label1.Size = new System.Drawing.Size(448, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "ANÁLISIS DE NÚMEROS";
+            this.label1.Text = "TAREA 1: ANÁLISIS DE NÚMEROS";
             // 
             // label2
             // 
@@ -80,9 +83,9 @@
             // PositivoNegativoTextBox
             // 
             this.PositivoNegativoTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PositivoNegativoTextBox.Location = new System.Drawing.Point(295, 180);
+            this.PositivoNegativoTextBox.Location = new System.Drawing.Point(295, 226);
             this.PositivoNegativoTextBox.Name = "PositivoNegativoTextBox";
-            this.PositivoNegativoTextBox.Size = new System.Drawing.Size(249, 26);
+            this.PositivoNegativoTextBox.Size = new System.Drawing.Size(281, 26);
             this.PositivoNegativoTextBox.TabIndex = 5;
             // 
             // label3
@@ -98,9 +101,9 @@
             // ParImparTextBox
             // 
             this.ParImparTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ParImparTextBox.Location = new System.Drawing.Point(295, 226);
+            this.ParImparTextBox.Location = new System.Drawing.Point(295, 180);
             this.ParImparTextBox.Name = "ParImparTextBox";
-            this.ParImparTextBox.Size = new System.Drawing.Size(249, 26);
+            this.ParImparTextBox.Size = new System.Drawing.Size(281, 26);
             this.ParImparTextBox.TabIndex = 7;
             // 
             // label4
@@ -113,11 +116,15 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "¿El número es positivo o negativo?";
             // 
+            // ErrorProvider1
+            // 
+            this.ErrorProvider1.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 289);
+            this.ClientSize = new System.Drawing.Size(593, 295);
             this.Controls.Add(this.ParImparTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.PositivoNegativoTextBox);
@@ -128,6 +135,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,6 +151,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox ParImparTextBox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ErrorProvider ErrorProvider1;
     }
 }
 
